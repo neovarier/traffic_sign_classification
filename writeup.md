@@ -50,11 +50,11 @@ signs data set:
 
 The code for this step is contained in the second code cell of the IPython notebook.  
 
-Number of training examples = 34799.
-Number of validation examples = 4410.
-Number of testing examples = 12630.
-Image data shape = (32, 32, 3).
-Number of classes = 43.
+* Number of training examples = 34799.
+* Number of validation examples = 4410.
+* Number of testing examples = 12630.
+* Image data shape = (32, 32, 3).
+* Number of classes = 43.
 
 ####2. Exploratory Visualization of the dataset
 
@@ -92,11 +92,11 @@ The augmented data is saved for later use.
 After data augmentation the dataset is analysed and visualised again to see the difference from the previous data set
 
 Analysis: (Cell 11)
-Number of training examples = 74217.
-Number of validation examples = 9390.
-Number of testing examples = 12630.
-Image data shape = (32, 32, 3).
-Number of classes = 43.
+* Number of training examples = 74217.
+* Number of validation examples = 9390.
+* Number of testing examples = 12630.
+* Image data shape = (32, 32, 3).
+* Number of classes = 43.
 
 Visualization: (Cell 12)
 
@@ -149,14 +149,14 @@ I chose the LeNet as my initial model as it is a well proven architicture for va
 
 ####4. Hyperparameter and optimizer 
 
-Optimizer: Adam. 
+* Optimizer: Adam Optimizer
 I used Adam as it automatically takes care of decreasing the learning rate
 so that it can the coarser steps in the beginning and take finer steps in the end to land at the global minima accurately.
-Batch size: 128
+* Batch size: 128
 I used 128, as this the maximum that my GPU was allowing. This would achieve maximum parallization in the computation.
-Learning Rate: 0.001
+* Learning Rate: 0.001
 I chose a small learning rate so that it does not skip the global minima.
-Epochs: 150
+* Epochs: 150
 I started with high number of epochs to analyse the pattern of training and validation loss.
 
 
@@ -186,6 +186,7 @@ To prevent overfitting I emplyed the following techniques:
 * L2 loss regularization
 I tried L2 loss regularization beta with 0.1,0.01 & 0.001.
 With 0.001, the loss was reducing but not smoothly. The accuracy was also not going beyond 0.9.
+Final L2 Regularization param: 0.001
 
 ![alt text][image9]
 ![alt text][image10]
