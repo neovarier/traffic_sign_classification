@@ -41,7 +41,7 @@ The goals / steps of this project are the following:
 ---
 ###Writeup / README
 Here is the link for my implemented code:
-(https://github.com/neovarier/traffic_sign_classification/Traffic_Sign_Classifier.ipynb)
+(https://github.com/neovarier/traffic_sign_classification/blob/master/Traffic_Sign_Classifier.ipynb)
 
 ###Data Set Summary & Exploration
 
@@ -205,6 +205,8 @@ I employed early stopping as it was achieving desired accuracy much before 150 e
 
 The training and validation accuracy were calulated in cell 20
 The testing accuracy is calculated in cell 24.
+The logs for the network training is captured in:
+https://github.com/neovarier/traffic_sign_classification/blob/master/log.txt
 
 My final model results were:
 * training set accuracy of = 99.2
