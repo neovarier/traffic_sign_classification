@@ -21,8 +21,8 @@ The goals / steps of this project are the following:
 [image6]: ./examples/gray.png "Grayscale Image"
 [image7]: ./examples/vanilla_loss.png "Loss"
 [image8]: ./examples/vanilla_accu.png "Acuuracy"
-[image9]: ./examples/loss_reg.png "Loss with L2 Regularization"
-[image10]: ./examples/accu_reg.png "Accuracy with L2 Regularization"
+[image9]: ./examples/reg_loss.png "Loss with L2 Regularization"
+[image10]: ./examples/reg_accu.png "Accuracy with L2 Regularization"
 [image11]: ./examples/loss.png "Final Loss"
 [image12]: ./examples/accu.png "Final Accuracy"
 [image13]: ./web_images/image1.png "Traffic Signal 1"
@@ -244,6 +244,7 @@ In the top 5 softmax probablities, the correct prediction does come up but at th
 The code for outputting the softmax probabilities for the 9 traffic signals is located in the 32th cell of the Ipython notebook.
 
 Image  1
+
 | Probablity		          |     Prediction	        					| 
 |:---------------------:|:---------------------------:| 
 | 0.979586              | Bicycles crossing           |
@@ -253,6 +254,7 @@ Image  1
 | 1.46039e-05           |Beware of ice/snow           |
 
 Image  2
+
 | Probablity		          |     Prediction	        					| 
 |:---------------------:|:---------------------------:| 
 | 0.999995              | Bumpy road                  |
@@ -262,6 +264,7 @@ Image  2
 | 2.07294e-11           | Beware of ice/snow          |
 
 Image  3
+
 | Probablity		          |     Prediction	        					| 
 |:---------------------:|:---------------------------:| 
 | 0.999866              | Stop                        |
@@ -271,6 +274,7 @@ Image  3
 | 7.91644e-08           | Turn left ahead             |
 
 Image  4
+
 | Probablity		          |     Prediction	        					        | 
 |:---------------------:|:-----------------------------------:| 
 | 1.0                   | Keep left                           |
@@ -280,6 +284,7 @@ Image  4
 | 1.44789e-20           | Turn right ahead                    |
 
 Image  5
+
 | Probablity		          |     Prediction	        					        | 
 |:---------------------:|:-----------------------------------:| 
 | 0.993743              | General caution                     |
@@ -289,6 +294,7 @@ Image  5
 | 4.06901e-07           | Bumpy road                          |
 
 Image  6
+
 | Probablity		          |     Prediction	        					        | 
 |:---------------------:|:-----------------------------------:| 
 | 0.987753              | Traffic signals                     |
@@ -298,6 +304,7 @@ Image  6
 | 3.10773e-08           | Road work                           |
 
 Image  7
+
 | Probablity		          |     Prediction	        					        | 
 |:---------------------:|:-----------------------------------:| 
 | 0.688249              | Pedestrians                         |
@@ -307,6 +314,7 @@ Image  7
 | 0.00255504            | Beware of ice/snow                  |
 
 Image  8
+
 | Probablity		          |     Prediction	        					         | 
 |:---------------------:|:------------------------------------:| 
 | 0.999179              | Children crossing                    |
@@ -316,6 +324,7 @@ Image  8
 | 6.38499e-06           | Right-of-way at the next intersection|
 
 Image  9
+
 | Probablity		          |     Prediction	        					         | 
 |:---------------------:|:------------------------------------:| 
 | 0.99846               | Dangerous curve to the left          |
