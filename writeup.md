@@ -19,7 +19,7 @@ The goals / steps of this project are the following:
 [image4]: ./examples/valid_aug_hist.png "Augmented Valid Histogram"
 [image5]: ./examples/color.png "Original Image"
 [image6]: ./examples/gray.png "Grayscale Image"
-[image7]: ./examples/vanilla_loss.png "Loss"
+[image7]: ./examples/vanalla_loss.png "Loss"
 [image8]: ./examples/vanilla_accu.png "Acuuracy"
 [image9]: ./examples/reg_loss.png "Loss with L2 Regularization"
 [image10]: ./examples/reg_accu.png "Accuracy with L2 Regularization"
