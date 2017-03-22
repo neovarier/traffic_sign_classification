@@ -1,0 +1,579 @@
+Training...
+
+EPOCH 1 ...
+Training Accuracy = 0.675
+Validation Accuracy = 0.594
+Training loss = 2.804
+Validation loss = 1.391
+
+EPOCH 2 ...
+Training Accuracy = 0.822
+Validation Accuracy = 0.713
+Training loss = 1.583
+Validation loss = 0.941
+
+Saving temp winner
+EPOCH 3 ...
+Training Accuracy = 0.890
+Validation Accuracy = 0.788
+Training loss = 1.259
+Validation loss = 0.727
+
+Saving temp winner
+EPOCH 4 ...
+Training Accuracy = 0.916
+Validation Accuracy = 0.824
+Training loss = 1.092
+Validation loss = 0.614
+
+Saving temp winner
+EPOCH 5 ...
+Training Accuracy = 0.941
+Validation Accuracy = 0.847
+Training loss = 0.978
+Validation loss = 0.556
+
+Saving temp winner
+EPOCH 6 ...
+Training Accuracy = 0.948
+Validation Accuracy = 0.854
+Training loss = 0.905
+Validation loss = 0.500
+
+Saving temp winner
+EPOCH 7 ...
+Training Accuracy = 0.956
+Validation Accuracy = 0.868
+Training loss = 0.852
+Validation loss = 0.450
+
+Saving temp winner
+EPOCH 8 ...
+Training Accuracy = 0.964
+Validation Accuracy = 0.870
+Training loss = 0.814
+Validation loss = 0.452
+
+Saving temp winner
+EPOCH 9 ...
+Training Accuracy = 0.970
+Validation Accuracy = 0.887
+Training loss = 0.782
+Validation loss = 0.406
+
+Saving temp winner
+EPOCH 10 ...
+Training Accuracy = 0.973
+Validation Accuracy = 0.886
+Training loss = 0.759
+Validation loss = 0.413
+
+EPOCH 11 ...
+Training Accuracy = 0.975
+Validation Accuracy = 0.894
+Training loss = 0.732
+Validation loss = 0.389
+
+Saving temp winner
+EPOCH 12 ...
+Training Accuracy = 0.978
+Validation Accuracy = 0.887
+Training loss = 0.720
+Validation loss = 0.426
+
+EPOCH 13 ...
+Training Accuracy = 0.977
+Validation Accuracy = 0.907
+Training loss = 0.711
+Validation loss = 0.336
+
+Saving temp winner
+EPOCH 14 ...
+Training Accuracy = 0.981
+Validation Accuracy = 0.905
+Training loss = 0.695
+Validation loss = 0.358
+
+EPOCH 15 ...
+Training Accuracy = 0.983
+Validation Accuracy = 0.906
+Training loss = 0.687
+Validation loss = 0.351
+
+EPOCH 16 ...
+Training Accuracy = 0.979
+Validation Accuracy = 0.901
+Training loss = 0.670
+Validation loss = 0.370
+
+EPOCH 17 ...
+Training Accuracy = 0.983
+Validation Accuracy = 0.909
+Training loss = 0.665
+Validation loss = 0.338
+
+Saving temp winner
+EPOCH 18 ...
+Training Accuracy = 0.981
+Validation Accuracy = 0.910
+Training loss = 0.659
+Validation loss = 0.336
+
+Saving temp winner
+EPOCH 19 ...
+Training Accuracy = 0.985
+Validation Accuracy = 0.909
+Training loss = 0.656
+Validation loss = 0.337
+
+EPOCH 20 ...
+Training Accuracy = 0.985
+Validation Accuracy = 0.909
+Training loss = 0.644
+Validation loss = 0.355
+
+EPOCH 21 ...
+Training Accuracy = 0.983
+Validation Accuracy = 0.913
+Training loss = 0.639
+Validation loss = 0.332
+
+Saving temp winner
+EPOCH 22 ...
+Training Accuracy = 0.985
+Validation Accuracy = 0.909
+Training loss = 0.632
+Validation loss = 0.330
+
+EPOCH 23 ...
+Training Accuracy = 0.986
+Validation Accuracy = 0.922
+Training loss = 0.627
+Validation loss = 0.275
+
+Saving temp winner
+EPOCH 24 ...
+Training Accuracy = 0.985
+Validation Accuracy = 0.911
+Training loss = 0.626
+Validation loss = 0.318
+
+EPOCH 25 ...
+Training Accuracy = 0.986
+Validation Accuracy = 0.915
+Training loss = 0.624
+Validation loss = 0.296
+
+EPOCH 26 ...
+Training Accuracy = 0.985
+Validation Accuracy = 0.915
+Training loss = 0.615
+Validation loss = 0.294
+
+EPOCH 27 ...
+Training Accuracy = 0.984
+Validation Accuracy = 0.902
+Training loss = 0.609
+Validation loss = 0.362
+
+EPOCH 28 ...
+Training Accuracy = 0.987
+Validation Accuracy = 0.918
+Training loss = 0.599
+Validation loss = 0.291
+
+EPOCH 29 ...
+Training Accuracy = 0.988
+Validation Accuracy = 0.916
+Training loss = 0.601
+Validation loss = 0.285
+
+EPOCH 30 ...
+Training Accuracy = 0.988
+Validation Accuracy = 0.909
+Training loss = 0.599
+Validation loss = 0.342
+
+EPOCH 31 ...
+Training Accuracy = 0.989
+Validation Accuracy = 0.923
+Training loss = 0.597
+Validation loss = 0.267
+
+Saving temp winner
+EPOCH 32 ...
+Training Accuracy = 0.989
+Validation Accuracy = 0.915
+Training loss = 0.593
+Validation loss = 0.310
+
+EPOCH 33 ...
+Training Accuracy = 0.989
+Validation Accuracy = 0.920
+Training loss = 0.592
+Validation loss = 0.286
+
+EPOCH 34 ...
+Training Accuracy = 0.988
+Validation Accuracy = 0.917
+Training loss = 0.587
+Validation loss = 0.289
+
+EPOCH 35 ...
+Training Accuracy = 0.988
+Validation Accuracy = 0.919
+Training loss = 0.582
+Validation loss = 0.278
+
+EPOCH 36 ...
+Training Accuracy = 0.989
+Validation Accuracy = 0.923
+Training loss = 0.586
+Validation loss = 0.268
+
+Saving temp winner
+EPOCH 37 ...
+Training Accuracy = 0.990
+Validation Accuracy = 0.924
+Training loss = 0.579
+Validation loss = 0.274
+
+Saving temp winner
+EPOCH 38 ...
+Training Accuracy = 0.989
+Validation Accuracy = 0.922
+Training loss = 0.579
+Validation loss = 0.273
+
+EPOCH 39 ...
+Training Accuracy = 0.989
+Validation Accuracy = 0.925
+Training loss = 0.574
+Validation loss = 0.271
+
+Saving temp winner
+EPOCH 40 ...
+Training Accuracy = 0.990
+Validation Accuracy = 0.922
+Training loss = 0.570
+Validation loss = 0.272
+
+EPOCH 41 ...
+Training Accuracy = 0.990
+Validation Accuracy = 0.920
+Training loss = 0.572
+Validation loss = 0.269
+
+EPOCH 42 ...
+Training Accuracy = 0.990
+Validation Accuracy = 0.922
+Training loss = 0.567
+Validation loss = 0.269
+
+EPOCH 43 ...
+Training Accuracy = 0.991
+Validation Accuracy = 0.921
+Training loss = 0.565
+Validation loss = 0.293
+
+EPOCH 44 ...
+Training Accuracy = 0.991
+Validation Accuracy = 0.931
+Training loss = 0.566
+Validation loss = 0.239
+
+Saving temp winner
+EPOCH 45 ...
+Training Accuracy = 0.990
+Validation Accuracy = 0.929
+Training loss = 0.563
+Validation loss = 0.242
+
+EPOCH 46 ...
+Training Accuracy = 0.991
+Validation Accuracy = 0.928
+Training loss = 0.562
+Validation loss = 0.250
+
+EPOCH 47 ...
+Training Accuracy = 0.991
+Validation Accuracy = 0.933
+Training loss = 0.557
+Validation loss = 0.233
+
+Saving temp winner
+EPOCH 48 ...
+Training Accuracy = 0.990
+Validation Accuracy = 0.928
+Training loss = 0.560
+Validation loss = 0.255
+
+EPOCH 49 ...
+Training Accuracy = 0.990
+Validation Accuracy = 0.926
+Training loss = 0.558
+Validation loss = 0.259
+
+EPOCH 50 ...
+Training Accuracy = 0.991
+Validation Accuracy = 0.929
+Training loss = 0.557
+Validation loss = 0.242
+
+EPOCH 51 ...
+Training Accuracy = 0.990
+Validation Accuracy = 0.930
+Training loss = 0.556
+Validation loss = 0.246
+
+EPOCH 52 ...
+Training Accuracy = 0.991
+Validation Accuracy = 0.924
+Training loss = 0.550
+Validation loss = 0.269
+
+EPOCH 53 ...
+Training Accuracy = 0.991
+Validation Accuracy = 0.924
+Training loss = 0.549
+Validation loss = 0.262
+
+EPOCH 54 ...
+Training Accuracy = 0.992
+Validation Accuracy = 0.932
+Training loss = 0.555
+Validation loss = 0.237
+
+EPOCH 55 ...
+Training Accuracy = 0.991
+Validation Accuracy = 0.932
+Training loss = 0.547
+Validation loss = 0.235
+
+EPOCH 56 ...
+Training Accuracy = 0.990
+Validation Accuracy = 0.928
+Training loss = 0.554
+Validation loss = 0.251
+
+EPOCH 57 ...
+Training Accuracy = 0.992
+Validation Accuracy = 0.933
+Training loss = 0.544
+Validation loss = 0.242
+
+Saving temp winner
+EPOCH 58 ...
+Training Accuracy = 0.992
+Validation Accuracy = 0.927
+Training loss = 0.545
+Validation loss = 0.255
+
+EPOCH 59 ...
+Training Accuracy = 0.991
+Validation Accuracy = 0.929
+Training loss = 0.542
+Validation loss = 0.251
+
+EPOCH 60 ...
+Training Accuracy = 0.993
+Validation Accuracy = 0.939
+Training loss = 0.545
+Validation loss = 0.220
+
+Saving temp winner
+EPOCH 61 ...
+Training Accuracy = 0.991
+Validation Accuracy = 0.925
+Training loss = 0.538
+Validation loss = 0.274
+
+EPOCH 62 ...
+Training Accuracy = 0.992
+Validation Accuracy = 0.931
+Training loss = 0.539
+Validation loss = 0.245
+
+EPOCH 63 ...
+Training Accuracy = 0.991
+Validation Accuracy = 0.929
+Training loss = 0.540
+Validation loss = 0.244
+
+EPOCH 64 ...
+Training Accuracy = 0.992
+Validation Accuracy = 0.936
+Training loss = 0.536
+Validation loss = 0.235
+
+EPOCH 65 ...
+Training Accuracy = 0.992
+Validation Accuracy = 0.927
+Training loss = 0.539
+Validation loss = 0.263
+
+EPOCH 66 ...
+Training Accuracy = 0.992
+Validation Accuracy = 0.930
+Training loss = 0.540
+Validation loss = 0.241
+
+EPOCH 67 ...
+Training Accuracy = 0.992
+Validation Accuracy = 0.931
+Training loss = 0.531
+Validation loss = 0.250
+
+EPOCH 68 ...
+Training Accuracy = 0.991
+Validation Accuracy = 0.933
+Training loss = 0.540
+Validation loss = 0.236
+
+EPOCH 69 ...
+Training Accuracy = 0.992
+Validation Accuracy = 0.930
+Training loss = 0.536
+Validation loss = 0.243
+
+EPOCH 70 ...
+Training Accuracy = 0.992
+Validation Accuracy = 0.932
+Training loss = 0.529
+Validation loss = 0.256
+
+EPOCH 71 ...
+Training Accuracy = 0.992
+Validation Accuracy = 0.932
+Training loss = 0.534
+Validation loss = 0.236
+
+EPOCH 72 ...
+Training Accuracy = 0.991
+Validation Accuracy = 0.927
+Training loss = 0.528
+Validation loss = 0.250
+
+EPOCH 73 ...
+Training Accuracy = 0.993
+Validation Accuracy = 0.933
+Training loss = 0.529
+Validation loss = 0.234
+
+EPOCH 74 ...
+Training Accuracy = 0.992
+Validation Accuracy = 0.931
+Training loss = 0.532
+Validation loss = 0.233
+
+EPOCH 75 ...
+Training Accuracy = 0.992
+Validation Accuracy = 0.936
+Training loss = 0.525
+Validation loss = 0.217
+
+EPOCH 76 ...
+Training Accuracy = 0.992
+Validation Accuracy = 0.943
+Training loss = 0.528
+Validation loss = 0.207
+
+Saving temp winner
+EPOCH 77 ...
+Training Accuracy = 0.993
+Validation Accuracy = 0.937
+Training loss = 0.527
+Validation loss = 0.211
+
+EPOCH 78 ...
+Training Accuracy = 0.992
+Validation Accuracy = 0.929
+Training loss = 0.531
+Validation loss = 0.247
+
+EPOCH 79 ...
+Training Accuracy = 0.993
+Validation Accuracy = 0.938
+Training loss = 0.531
+Validation loss = 0.217
+
+EPOCH 80 ...
+Training Accuracy = 0.991
+Validation Accuracy = 0.932
+Training loss = 0.527
+Validation loss = 0.231
+
+EPOCH 81 ...
+Training Accuracy = 0.992
+Validation Accuracy = 0.931
+Training loss = 0.527
+Validation loss = 0.238
+
+EPOCH 82 ...
+Training Accuracy = 0.992
+Validation Accuracy = 0.936
+Training loss = 0.525
+Validation loss = 0.227
+
+EPOCH 83 ...
+Training Accuracy = 0.993
+Validation Accuracy = 0.938
+Training loss = 0.522
+Validation loss = 0.227
+
+EPOCH 84 ...
+Training Accuracy = 0.992
+Validation Accuracy = 0.936
+Training loss = 0.527
+Validation loss = 0.220
+
+EPOCH 85 ...
+Training Accuracy = 0.992
+Validation Accuracy = 0.936
+Training loss = 0.522
+Validation loss = 0.228
+
+EPOCH 86 ...
+Training Accuracy = 0.992
+Validation Accuracy = 0.935
+Training loss = 0.521
+Validation loss = 0.235
+
+EPOCH 87 ...
+Training Accuracy = 0.994
+Validation Accuracy = 0.939
+Training loss = 0.522
+Validation loss = 0.216
+
+EPOCH 88 ...
+Training Accuracy = 0.993
+Validation Accuracy = 0.939
+Training loss = 0.519
+Validation loss = 0.212
+
+EPOCH 89 ...
+Training Accuracy = 0.993
+Validation Accuracy = 0.935
+Training loss = 0.520
+Validation loss = 0.226
+
+EPOCH 90 ...
+Training Accuracy = 0.993
+Validation Accuracy = 0.936
+Training loss = 0.521
+Validation loss = 0.219
+
+EPOCH 91 ...
+Training Accuracy = 0.993
+Validation Accuracy = 0.943
+Training loss = 0.521
+Validation loss = 0.201
+
+EPOCH 92 ...
+Training Accuracy = 0.993
+Validation Accuracy = 0.940
+Training loss = 0.519
+Validation loss = 0.217
+
+Stopping early
+0.943024493952
