@@ -21,10 +21,10 @@ The goals / steps of this project are the following:
 [image6]: ./examples/gray.png "Grayscale Image"
 [image7]: ./examples/vanilla_loss.png "Loss"
 [image8]: ./examples/vanilla_accu.png "Acuuracy"
-[image9]: ./examples/vanilla_accu.png "Loss with L2 Regularization"
-[image10]: ./examples/vanilla_accu.png "Accuracy with L2 Regularization"
-[image11]: ./examples/vanilla_accu.png "Final Loss"
-[image12]: ./examples/vanilla_accu.png "Final Accuracy"
+[image9]: ./examples/loss_reg.png "Loss with L2 Regularization"
+[image10]: ./examples/accu_reg.png "Accuracy with L2 Regularization"
+[image11]: ./examples/loss.png "Final Loss"
+[image12]: ./examples/accu.png "Final Accuracy"
 [image13]: ./web_images/image1.png "Traffic Signal 1"
 [image14]: ./web_images/image2.jpg "Traffic Signal 2"
 [image15]: ./web_images/image3.jpg "Traffic Signal 3"
@@ -41,7 +41,7 @@ The goals / steps of this project are the following:
 ---
 ###Writeup / README
 Here is the link for my implemented code:
-(https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+(https://github.com/neovarier/traffic_sign_classification/Traffic_Sign_Classifier.ipynb)
 
 ###Data Set Summary & Exploration
 
@@ -98,6 +98,7 @@ Image data shape = (32, 32, 3)
 Number of classes = 43
 
 Visualization: (Cell 12)
+
 ![alt text][image3]
 ![alt text][image4]
 
@@ -116,7 +117,7 @@ An example grayscale operation
 Next, I normalized the image data using cv2.normalize, because the pixel values range from 0 to 255.
 With different images the max and min pixel values could be different. And the mean is non-zero.
 Normalization would make it centered around zero and scale the range pixel within -1 to 1.
-This would help the network to reach the minima faster as the feature axes in the feature hyperspace are normalized.
+This would help the network to reach the minima faster as the feature axes in the feature hyperspace have a uniform scale accross
 
 The preprocessing step is carried out in cell 14
 
@@ -174,6 +175,7 @@ I tracking the training and validation loss to see if the model was overfitting
 I tracked the training and validation accuracy to see if the accuracy increases and reaches the expected value
 
 With the above tracking I saw that the the model was overfitting.
+
 ![alt text][image7]
 ![alt text][image8]
 
@@ -183,8 +185,10 @@ To prevent overfitting I emplyed the following techniques:
 * L2 loss regularization
 I tried L2 loss regularization beta with 0.1,0.01 & 0.001.
 With 0.001, the loss was reducing but not smoothly. The accuracy was also not going beyond 0.9
+
 ![alt text][image9]
 ![alt text][image10]
+
 * Dropouts
 In conjunction with L2 loss, I tried applying dropouts in just the fully connected layer with keep_prob=0.5, but was not giving expected accuracy. Then tried dropouts for all layers with (including convolutional layers). With this I noticed that I had to increase
 the keep_prob for increasing the accuracy. But still was not getting greater than 0.93 validation accuracy. To give the best keep_prob of both conv and fc, I tried different keep_prob for conv and fc layers:
@@ -193,6 +197,7 @@ conv fc: 0.5
 It seemed that high dropouts on conv layers does not help. With this configuration the validation accuracy was 
 * Early stopping
 I employed early stopping as it was achieving desired accuracy much before 150 epoch.
+
 ![alt text][image11]
 ![alt text][image12]
 
@@ -239,57 +244,83 @@ In the top 5 softmax probablities, the correct prediction does come up but at th
 The code for outputting the softmax probabilities for the 9 traffic signals is located in the 32th cell of the Ipython notebook.
 
 Image  1
-Prob: 0.979586 Prediction: Bicycles crossing
-Prob: 0.0196223 Prediction: Bumpy road
-Prob: 0.000722326 Prediction: Children crossing
-Prob: 4.91705e-05 Prediction: Slippery road
-Prob: 1.46039e-05 Prediction: Beware of ice/snow
+| Probablity		          |     Prediction	        					| 
+|:---------------------:|:---------------------------:| 
+| 0.979586              | Bicycles crossing           |
+| 0.0196223             | Bumpy road                  |
+| 0.000722326           | Children crossing           |
+| 4.91705e-05           | Slippery road               |
+| 1.46039e-05           |Beware of ice/snow           |
+
 Image  2
-Prob: 0.999995 Prediction: Bumpy road
-Prob: 5.45566e-06 Prediction: Bicycles crossing
-Prob: 1.93473e-09 Prediction: Traffic signals
-Prob: 4.78361e-11 Prediction: Road work
-Prob: 2.07294e-11 Prediction: Beware of ice/snow
+| Probablity		          |     Prediction	        					| 
+|:---------------------:|:---------------------------:| 
+| 0.999995              | Bumpy road                  |
+| 5.45566e-06           | Bicycles crossing           |
+| 1.93473e-09           | Traffic signals             |
+| 4.78361e-11           | Road work                   |
+| 2.07294e-11           | Beware of ice/snow          |
+
 Image  3
-Prob: 0.999866 Prediction: Stop
-Prob: 9.31516e-05 Prediction: Yield
-Prob: 3.94518e-05 Prediction: Keep right
-Prob: 1.59648e-06 Prediction: Speed limit (50km/h)
-Prob: 7.91644e-08 Prediction: Turn left ahead
+| Probablity		          |     Prediction	        					| 
+|:---------------------:|:---------------------------:| 
+| 0.999866              | Stop                        |
+| 9.31516e-05           | Yield                       |
+| 3.94518e-05           | Keep right                  |
+| 1.59648e-06           | Speed limit (50km/h)        |
+| 7.91644e-08           | Turn left ahead             |
+
 Image  4
-Prob: 1.0 Prediction: Keep left
-Prob: 2.45996e-19 Prediction: End of no passing
-Prob: 1.59154e-19 Prediction: Road work
-Prob: 3.30148e-20 Prediction: End of all speed and passing limits
-Prob: 1.44789e-20 Prediction: Turn right ahead
+| Probablity		          |     Prediction	        					        | 
+|:---------------------:|:-----------------------------------:| 
+| 1.0                   | Keep left                           |
+| 2.45996e-19           | End of no passing                   |
+| 1.59154e-19           | Road work                           |
+| 3.30148e-20           | End of all speed and passing limits |
+| 1.44789e-20           | Turn right ahead                    |
+
 Image  5
-Prob: 0.993743 Prediction: General caution
-Prob: 0.00609989 Prediction: Traffic signals
-Prob: 0.000155608 Prediction: Pedestrians
-Prob: 6.43928e-07 Prediction: Road work
-Prob: 4.06901e-07 Prediction: Bumpy road
+| Probablity		          |     Prediction	        					        | 
+|:---------------------:|:-----------------------------------:| 
+| 0.993743              | General caution                     |
+| 0.00609989            | Traffic signals                     |
+| 0.000155608           | Pedestrians                         |
+| 6.43928e-07           | Road work                           |
+| 4.06901e-07           | Bumpy road                          |
+
 Image  6
-Prob: 0.987753 Prediction: Traffic signals
-Prob: 0.012234 Prediction: General caution
-Prob: 1.22218e-05 Prediction: Pedestrians
-Prob: 2.00876e-07 Prediction: Bumpy road
-Prob: 3.10773e-08 Prediction: Road work
+| Probablity		          |     Prediction	        					        | 
+|:---------------------:|:-----------------------------------:| 
+| 0.987753              | Traffic signals                     |
+| 0.012234              | General caution                     |
+| 1.22218e-05           | Pedestrians                         |
+| 2.00876e-07           | Bumpy road                          |
+| 3.10773e-08           | Road work                           |
+
 Image  7
-Prob: 0.688249 Prediction: Pedestrians
-Prob: 0.240953 Prediction: Children crossing
-Prob: 0.0628403 Prediction: Road narrows on the right
-Prob: 0.0031001 Prediction: Bicycles crossing
-Prob: 0.00255504 Prediction: Beware of ice/snow
+| Probablity		          |     Prediction	        					        | 
+|:---------------------:|:-----------------------------------:| 
+| 0.688249              | Pedestrians                         |
+| 0.240953              | Children crossing                   |
+| 0.0628403             | Road narrows on the right           |
+| 0.0031001             | Bicycles crossing                   |
+| 0.00255504            | Beware of ice/snow                  |
+
 Image  8
-Prob: 0.999179 Prediction: Children crossing
-Prob: 0.000476159 Prediction: Bicycles crossing
-Prob: 0.000311066 Prediction: Beware of ice/snow
-Prob: 1.74707e-05 Prediction: Dangerous curve to the right
-Prob: 6.38499e-06 Prediction: Right-of-way at the next intersection
+| Probablity		          |     Prediction	        					         | 
+|:---------------------:|:------------------------------------:| 
+| 0.999179              | Children crossing                    |
+| 0.000476159           | Bicycles crossing                    |
+| 0.000311066           | Beware of ice/snow                   |
+| 1.74707e-05           | Dangerous curve to the right         |
+| 6.38499e-06           | Right-of-way at the next intersection|
+
 Image  9
-Prob: 0.99846 Prediction: Dangerous curve to the left
-Prob: 0.00074877 Prediction: Go straight or left
-Prob: 0.00029424 Prediction: Wild animals crossing
-Prob: 0.000198753 Prediction: Slippery road
-Prob: 0.000198099 Prediction: Speed limit (70km/h)
+| Probablity		          |     Prediction	        					         | 
+|:---------------------:|:------------------------------------:| 
+| 0.99846               | Dangerous curve to the left          |
+| 0.00074877            | Go straight or left                  |
+| 0.00029424            | Wild animals crossing                |
+| 0.000198753           | Slippery road                        |
+| 0.000198099           | Speed limit (70km/h)                 |
 
