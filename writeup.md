@@ -80,6 +80,7 @@ with lesser training data.
 
 To equalize the histogram, the number of images of classes with lesser data are increased.
 I have increased their number by applying rotation and translation.
+I have tried to increase image count of the classes with less image to come close to the class with highest images
 This brings variability in the dataset for those classes.
 These operations are chosen as to simulate real world scenario as the images could be captured
 from various locations and orientations on the road.
@@ -191,7 +192,8 @@ With 0.001, the loss was reducing but not smoothly. The accuracy was also not go
 
 * Dropouts
 In conjunction with L2 loss, I tried applying dropouts in just the fully connected layer with keep_prob=0.5, but was not giving expected accuracy. Then tried dropouts for all layers with (including convolutional layers). With this I noticed that I had to increase
-the keep_prob for increasing the accuracy. But still was not getting greater than 0.93 validation accuracy. To give the best keep_prob of both conv and fc, I tried different keep_prob for conv and fc layers:
+the keep_prob for increasing the accuracy. But still was not getting greater than 0.93 validation accuracy. I tried to take the best keep_prob that works for each conv and fc layers separately. 
+This gave me better results:
 conv keep_prob:0.9
 conv fc: 0.5
 It seemed that high dropouts on conv layers does not help. With this configuration the validation accuracy was 
@@ -216,10 +218,11 @@ To increase the accuracy further may I can apply pretrained weights at 94.3 and 
 
 Here are nine German traffic signs that I found on the web:
 
-![alt text][image13] ![alt text][image14] ![alt text][image15] 
-![alt text][image16] ![alt text][image17] ![alt text][image18]
-![alt text][image19] ![alt text][image20] ![alt text][image21]
+![alt text][image19] ![alt text][image16] ![alt text][image14] 
+![alt text][image20] ![alt text][image18] ![alt text][image21]
+![alt text][image15] ![alt text][image13] ![alt text][image17]
 
+The image 2 is a Pedestrian image, might difficult to classify because of the presence of the zebra crossing, which is not present in the training data. Also the traffic signal shape for image 9 is different from the training set as it is not triangular
 The code for making predictions on my final model is located in the 31st cell of the Ipython notebook.
 
 Here are the results of the prediction:
