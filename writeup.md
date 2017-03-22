@@ -45,16 +45,16 @@ Here is the link for my implemented code:
 
 ###Data Set Summary & Exploration
 
-I used the pandas library to calculate summary statistics of the traffic
+I used the numpy library to calculate summary statistics of the traffic
 signs data set:
 
 The code for this step is contained in the second code cell of the IPython notebook.  
 
-Number of training examples = 34799
-Number of validation examples = 4410
-Number of testing examples = 12630
-Image data shape = (32, 32, 3)
-Number of classes = 43
+Number of training examples = 34799.
+Number of validation examples = 4410.
+Number of testing examples = 12630.
+Image data shape = (32, 32, 3).
+Number of classes = 43.
 
 ####2. Exploratory Visualization of the dataset
 
@@ -88,15 +88,15 @@ The maximum rotation is restricted between -3 to +3 degrees.
 The maximum translation is restricted between -3 to 3 pixels.
 
 
-The augmented data is saved for later use
-After data augmentation the dataset is analysed and vidualised again to see the difference from the previous data set
+The augmented data is saved for later use.
+After data augmentation the dataset is analysed and visualised again to see the difference from the previous data set
 
 Analysis: (Cell 11)
-Number of training examples = 74217
-Number of validation examples = 9390
-Number of testing examples = 12630
-Image data shape = (32, 32, 3)
-Number of classes = 43
+Number of training examples = 74217.
+Number of validation examples = 9390.
+Number of testing examples = 12630.
+Image data shape = (32, 32, 3).
+Number of classes = 43.
 
 Visualization: (Cell 12)
 
@@ -118,9 +118,9 @@ An example grayscale operation
 Next, I normalized the image data using cv2.normalize, because the pixel values range from 0 to 255.
 With different images the max and min pixel values could be different. And the mean is non-zero.
 Normalization would make it centered around zero and scale the range pixel within -1 to 1.
-This would help the network to reach the minima faster as the feature axes in the feature hyperspace have a uniform scale accross
+This would help the network to reach the minima faster as the feature axes in the feature hyperspace have a uniform scale accross.
 
-The preprocessing step is carried out in cell 14
+The preprocessing step is carried out in cell 14.
 
 ####3. Model architecture
 
@@ -151,13 +151,13 @@ I chose the LeNet as my initial model as it is a well proven architicture for va
 
 Optimizer: Adam. 
 I used Adam as it automatically takes care of decreasing the learning rate
-so that it can the coarser steps in the beginning and take finer steps in the end to land at the global minima accurately
+so that it can the coarser steps in the beginning and take finer steps in the end to land at the global minima accurately.
 Batch size: 128
-I used 128, as this the maximum that my GPU was allowing. This would achieve maximum parallization in the computation
+I used 128, as this the maximum that my GPU was allowing. This would achieve maximum parallization in the computation.
 Learning Rate: 0.001
-I chose a small learning rate so that it does not skip the global minima
+I chose a small learning rate so that it does not skip the global minima.
 Epochs: 150
-I started with high number of epochs to analyse the pattern of training and validation loss
+I started with high number of epochs to analyse the pattern of training and validation loss.
 
 
 
@@ -172,20 +172,20 @@ I tracked the following while training:
 * Training accuracy
 * Validation accuracy
 
-I tracking the training and validation loss to see if the model was overfitting
-I tracked the training and validation accuracy to see if the accuracy increases and reaches the expected value
+I tracking the training and validation loss to see if the model was overfitting.
+I tracked the training and validation accuracy to see if the accuracy increases and reaches the expected value.
 
 With the above tracking I saw that the the model was overfitting.
 
 ![alt text][image7]
 ![alt text][image8]
 
-The validation loss reduces first and then it keeps increasing, whereas the training loss keeps decreasing
+The validation loss reduces first and then it keeps increasing, whereas the training loss keeps decreasing.
 
 To prevent overfitting I emplyed the following techniques:
 * L2 loss regularization
 I tried L2 loss regularization beta with 0.1,0.01 & 0.001.
-With 0.001, the loss was reducing but not smoothly. The accuracy was also not going beyond 0.9
+With 0.001, the loss was reducing but not smoothly. The accuracy was also not going beyond 0.9.
 
 ![alt text][image9]
 ![alt text][image10]
@@ -195,15 +195,15 @@ In conjunction with L2 loss, I tried applying dropouts in just the fully connect
 the keep_prob for increasing the accuracy. But still was not getting greater than 0.93 validation accuracy. I tried to take the best keep_prob that works for each conv and fc layers separately. 
 This gave me better results:
 conv keep_prob:0.9
-conv fc: 0.5
-It seemed that high dropouts on conv layers does not help. With this configuration the validation accuracy was 
+fc keep_prob: 0.5
+It seemed that high dropouts on conv layers does not help. With this configuration the validation accuracy was exceeding 0.93.
 * Early stopping
 I employed early stopping as it was achieving desired accuracy much before 150 epoch.
 
 ![alt text][image11]
 ![alt text][image12]
 
-The training and validation accuracy were calulated in cell 20
+The training and validation accuracy were calulated in cell 20.
 The testing accuracy is calculated in cell 24.
 The logs for the network training is captured in:
 https://github.com/neovarier/traffic_sign_classification/blob/master/log.txt
@@ -224,7 +224,7 @@ Here are nine German traffic signs that I found on the web:
 ![alt text][image20] ![alt text][image18] ![alt text][image21]
 ![alt text][image15] ![alt text][image13] ![alt text][image17]
 
-The image 2 is a Pedestrian image, might difficult to classify because of the presence of the zebra crossing, which is not present in the training data. Also the traffic signal shape for image 9 is different from the training set as it is not triangular
+The image 2 is a Pedestrian image, might difficult to classify because of the presence of the zebra crossing, which is not present in the training data. Also the traffic signal shape for image 9 is different from the training set as it is not triangular.
 The code for making predictions on my final model is located in the 31st cell of the Ipython notebook.
 
 Here are the results of the prediction:
@@ -243,7 +243,7 @@ Here are the results of the prediction:
 
 
 The model was able to correctly guess 8 of the 9 traffic signs, which gives an accuracy of 88.8889%. This compares favorably to the accuracy on the test set of test data which is 94.3.
-The image 9 which is "Wild animals crossing" whose shape is similar to "Dangerous curve to the left"
+The image 9 which is "Wild animals crossing" whose shape is similar to "Dangerous curve to the left".
 In the top 5 softmax probablities, the correct prediction does come up but at the 3rd rank.
 
 The code for outputting the softmax probabilities for the 9 traffic signals is located in the 32th cell of the Ipython notebook.
